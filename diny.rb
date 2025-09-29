@@ -5,21 +5,21 @@
 class Diny < Formula
   desc "🦕 Generate meaningful commit messages from git diff"
   homepage "https://github.com/dinoDanic/diny"
-  version "0.2.8"
+  version "0.2.9"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.2.8/diny_Darwin_x86_64.tar.gz"
-      sha256 "e9e3f49550cea8942aaf003cd650beb900080ec464d9599d7514ab4534dba520"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.2.9/diny_Darwin_x86_64.tar.gz"
+      sha256 "d651135757bc20617e63aab6c93ff523d951af7fd65b71d77c32bd64d01488b2"
 
       def install
         bin.install "diny"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.2.8/diny_Darwin_arm64.tar.gz"
-      sha256 "d456b375d48ae86c4985aa3479b262a44370ac1e72940f2057fddd10b4a8af3a"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.2.9/diny_Darwin_arm64.tar.gz"
+      sha256 "0ff03605f81d9baf95646eed00593848f841b4414e83049c7d770ea11e9157cb"
 
       def install
         bin.install "diny"
@@ -29,15 +29,15 @@ class Diny < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.2.8/diny_Linux_x86_64.tar.gz"
-      sha256 "1b98b3acb290da8ab72947fa3f8a069fce371aee61af88fddd81fdf8a27ff9eb"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.2.9/diny_Linux_x86_64.tar.gz"
+      sha256 "427b476692a4a23e3f6b0265fbead990698f3b5163ef452e551729572a38f5c2"
       def install
         bin.install "diny"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.2.8/diny_Linux_arm64.tar.gz"
-      sha256 "3f69dceec7288c8c587becea430e22981a58f4d951d290ae94b045930040cc74"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.2.9/diny_Linux_arm64.tar.gz"
+      sha256 "90be3d28fcaa8df032666605590601cdd608afacb386d89752aa1a8bf6aafbb2"
       def install
         bin.install "diny"
       end
