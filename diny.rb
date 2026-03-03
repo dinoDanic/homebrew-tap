@@ -5,23 +5,23 @@
 class Diny < Formula
   desc "🦕 Generate meaningful commit messages from git diff"
   homepage "https://github.com/dinoDanic/diny"
-  version "0.5.4"
+  version "0.5.5"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.5.4/diny_Darwin_x86_64.tar.gz"
-      sha256 "f1575170399e3ad7a0cc33dd755178d8a7637d1682daa288960a0c2dae4a2b27"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.5.5/diny_Darwin_x86_64.tar.gz"
+      sha256 "db07012835039a0181f474f4e253709f474cc6364fc99827ed07be57d5df8bb4"
 
-      def install
+      define_method(:install) do
         bin.install "diny"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.5.4/diny_Darwin_arm64.tar.gz"
-      sha256 "a0968e1f6c87b45d0d4351024bf1cc1a8075dce5c07e11c6e5bef629128d8e4f"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.5.5/diny_Darwin_arm64.tar.gz"
+      sha256 "386f7e2558f233b2d41e253a7180e735683cc0ed2bd9350e1f44cfd293d44dd7"
 
-      def install
+      define_method(:install) do
         bin.install "diny"
       end
     end
@@ -29,16 +29,16 @@ class Diny < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.5.4/diny_Linux_x86_64.tar.gz"
-      sha256 "ae7bfec00a6e3baec7d186c7a71a15237afac9cad77eaa1a6f68b3f86f8f7531"
-      def install
+      url "https://github.com/dinoDanic/diny/releases/download/v0.5.5/diny_Linux_x86_64.tar.gz"
+      sha256 "9e650066643bbae99996a8c99b9dc54b71cb6c0293dd2d4d798a32f60b2c5bfc"
+      define_method(:install) do
         bin.install "diny"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.5.4/diny_Linux_arm64.tar.gz"
-      sha256 "9a32640130ad978f646cc01ddbce7102fa945ba20b376ac30225b1e0dd9f3dfa"
-      def install
+      url "https://github.com/dinoDanic/diny/releases/download/v0.5.5/diny_Linux_arm64.tar.gz"
+      sha256 "a96de1a9d1f198c3c5e0801aae32d2fe4364d55db65cb5e29a27b09af2535505"
+      define_method(:install) do
         bin.install "diny"
       end
     end
