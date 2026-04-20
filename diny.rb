@@ -5,21 +5,21 @@
 class Diny < Formula
   desc "🦕 Generate meaningful commit messages from git diff"
   homepage "https://github.com/dinoDanic/diny"
-  version "0.7.5"
+  version "0.7.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.7.5/diny_Darwin_x86_64.tar.gz"
-      sha256 "30bd2b9396212f6199f2b970fd123b8099d4c71be575c462092466dc9ba3e70a"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.7.6/diny_Darwin_x86_64.tar.gz"
+      sha256 "6455bc3176042e69cdb72ff3fa2402fc34343e335a8eaa6e44ca0e84d90d69de"
 
       define_method(:install) do
         bin.install "diny"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.7.5/diny_Darwin_arm64.tar.gz"
-      sha256 "cf35c25a33018458d4c1a5e295830be24262b48532e993b2514535ccd47b31aa"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.7.6/diny_Darwin_arm64.tar.gz"
+      sha256 "07e6253169f2dddf4b432074a4760a21b7bfea6255bd354bc30a7d6a4f0da44b"
 
       define_method(:install) do
         bin.install "diny"
@@ -29,15 +29,15 @@ class Diny < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.7.5/diny_Linux_x86_64.tar.gz"
-      sha256 "4a515c5e032af01002b21ac709602b23efe62ff35642699bacd2342cb326cdf9"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.7.6/diny_Linux_x86_64.tar.gz"
+      sha256 "7ddec37bec04765233f05707b3b1440830c4d5824ffa12d8d572d89415faa0cc"
       define_method(:install) do
         bin.install "diny"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dinoDanic/diny/releases/download/v0.7.5/diny_Linux_arm64.tar.gz"
-      sha256 "6956f292ef190a82b419f86e0e41bf9040c866ff827846ab5b2fff28bf0b7a74"
+      url "https://github.com/dinoDanic/diny/releases/download/v0.7.6/diny_Linux_arm64.tar.gz"
+      sha256 "ab45aa0e2ee1b45420fdcfdf07e815ca4496570c364101723c6bd34e1ee0edc3"
       define_method(:install) do
         bin.install "diny"
       end
